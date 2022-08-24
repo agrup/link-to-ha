@@ -1,0 +1,4 @@
+fastapi==0.74.0
+requests
+# gunicorn==20.1.0
+uvicorn[standard]

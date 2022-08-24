@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    ha-extenal-lin:   
+        build: .
+        container_name: ${DOCKER_SERVICE_NAME}
+        env_file:
+            - .env    
+        ports:
+            - ${DOCKER_PORT}:80    
+        volumes:
+            - ./src:/app/src
+            # - ./tests:/app/tests
