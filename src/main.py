@@ -4,7 +4,7 @@ import requests
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/toggle-alarm")
 def read_root(key: str ):
 
     try:
