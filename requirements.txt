@@ -1,4 +1,4 @@
-fastapi==0.74.0
+fastapi>=0.68.0,<0.69.0
 requests
 # gunicorn==20.1.0
-uvicorn[standard]
+uvicorn>=0.15.0,<0.16.0
