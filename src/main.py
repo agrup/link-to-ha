@@ -21,3 +21,11 @@ def read_root(key: str ):
         return {"status": response.status_code}
     except Exception as error:
         return {"Error": error}
+
+@app.get("/hello")
+def hello():
+    try:
+        return {"Hello": "world!"}
+
+    except Exception as error:
+        return {"Error": error}        
