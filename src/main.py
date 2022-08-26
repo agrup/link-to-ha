@@ -18,6 +18,6 @@ def read_root(key: str ):
 
         response = requests.request("POST", url, json=payload, headers=headers)
 
-        return {"statusessaa": response.status_code}
+        return {"status": response.status_code}
     except Exception as error:
         return {"Error": error}
