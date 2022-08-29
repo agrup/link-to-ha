@@ -17,8 +17,8 @@ def read_root(key: str ):
         }
 
         response = requests.request("POST", url, json=payload, headers=headers)
-
-        return {"status": response.status_code}
+        print(response.json())
+        return {"status": response.status_code, "alarm":response.json()[0].get('state')}
     except Exception as error:
         return {"Error": error}
 
